@@ -2,8 +2,8 @@
 
 import { CreateCategoryParams } from '@/types'
 import { handleError } from '../utils'
-import { connectToDatabase } from '../mongoosedb/database'
-import Category from '../mongoosedb/database/models/category.model'
+import { connectToDatabase } from '../database'
+import Category from '../database/models/category.model'
 
 export const createCategory = async ({
   categoryName,
